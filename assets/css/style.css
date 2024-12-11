@@ -277,6 +277,10 @@ footer{
         align-items: center;
     }
 
+    header{
+        padding: 5rem 0rem;
+    }
+
     main{
         max-width: 57.5rem;
         height: 30rem;
@@ -363,6 +367,7 @@ footer{
     footer{
         background-color:transparent;
         margin-top: 1rem;
+        height: 6.25rem;
     }
     
 }
