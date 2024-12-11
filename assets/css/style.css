@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+
+    /* Colors */
+    /* Primary */
+    --Strong-cyan: hsl(172, 67%, 45%);
+
+    /* Neutral */
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Fonts */
+    --font-Space-Mono:'Space Mono'
+}
+
+/* CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+  
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+  
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+  
+input, button, textarea, select {
+    font: inherit;
+}
+  
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+  
+#root, #__next {
+    isolation: isolate;
+}
+/* end of CSS Reset */
+
+/* css style start */
+body{
+    font-family: var(--font-Space-Mono);
+    font-weight: 700;
+    background-color: var(--Light-grayish-cyan);
+}
+
+/* header start */
+header{
+    text-align: center;
+    max-width: 100%;
+    padding: 1.875rem 0rem;
+}
+
+.haader-text{
+    color: var(--Dark-grayish-cyan);
+    letter-spacing: 0.5rem;
+    font-size: 1.75rem;
+}
+/* header end */
+
+/* main start */
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--White);
+    border-radius: 1.5625rem 1.5625rem 0rem 0rem;
+    padding: 2rem 1.5rem;
+}
+
+.form-container{
+    width: 100%;
+    padding: 0rem 0.5rem;
+}
+
+/* bill start*/
+.bill-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 2.25rem;
+}
+
+#bill{
+    background: url(../images/icon-dollar.svg);
+    background-position: 1rem;
+    background-repeat: no-repeat;
+}
+/* buttons end*/
+
+/* label and inputs start */
+.label-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.errorMessage{
+    color:orange;
+    visibility: hidden;
+}
+
+.label{
+    color: var(--Dark-grayish-cyan);
+    padding-bottom: 0.5rem;
+}
+
+.input{
+    height: 2.875rem;
+    width: 100%;
+    border: none;
+    outline-color: var(--Strong-cyan);
+    background-color: var(--Very-light-grayish-cyan) !important;
+    color: var(--Very-dark-cyan);
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 0rem 1rem;
+    border-radius: 0.3125rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::placeholder{
+    color: var(--Grayish-cyan);
+}
+
+.error{
+    visibility: visible;
+}
+
+.input-error{
+    border:2px solid orange;
+
+}
+/* label and inputs end */
+
+
+/* buttons start*/
+.tip-buttons-section{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns:repeat(auto-fit,minmax(9.125rem,1fr));
+    align-items: center;
+    margin-bottom: 2.25rem;
+}
+
+.tip-button{
+    border: none;
+    height: 3rem;
+    min-width: 9.125rem;
+    background-color: var(--Very-dark-cyan);
+    font-size: 1.5rem;
+    color: var(--Very-light-grayish-cyan);
+    border-radius: 0.3125rem;
+}
+
+button{
+    transition: all 0.3s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--Light-grayish-cyan) !important;
+    color: var(--Very-dark-cyan);
+}
+
+.active{
+    background-color: var(--Strong-cyan) !important;
+    color: var(--Very-dark-cyan) !important;
+}
+
+#CustomTip{
+    height: 3rem;
+    min-width: 9.125rem;
+    padding-right: 0.5rem !important;
+}
+
+#CustomTip::placeholder{
+    color: var(--Dark-grayish-cyan);
+    text-align: center;
+}
+/* buttons end*/
+
+/* number Of People start*/
+.numberOfPeople-sction{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 2.25rem;
+}
+
+#people{
+    background: url(../images/icon-person.svg);
+    background-position: 1rem;
+    background-repeat: no-repeat;
+}
+/* number Of People end*/
+
+/* output start */
+.output-container{
+    width: 100%;
+    min-height: 16.0625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start ;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0.9375rem;
+    padding:1.5rem;
+}
+
+.Amount-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    margin: 1rem 0rem;
+}
+
+.Amount-title{
+    color: var(--Very-light-grayish-cyan);}
+
+.Amount-text{
+    color: var(--Grayish-cyan);
+    font-size: 13px;
+}
+
+.Amount{
+    color: var(--Strong-cyan);
+    font-size: 1.875rem;
+    overflow:hidden;
+    max-width: 13.75rem;
+    max-height: 2.8125rem;
+
+}
+
+#ResetButton{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background-color: #0D686D;
+    border-radius: 0.3125rem;
+    color: var(--Very-dark-cyan);
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+footer{
+    background-color: white;
+}
+/* output end */
+/* main end */
+
+/* responsive css */
+@media only screen and (min-width:48rem){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        max-width: 57.5rem;
+        height: 30rem;
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        column-gap: 2rem;
+        padding: 2rem;
+        border-radius: 1.5625rem;
+    }
+
+    /* form section start*/
+    .form-container{
+        width: 100%;
+        padding: 0.8rem 1rem;
+    }
+
+    .label{
+        padding-bottom: 0.4rem;
+    }
+
+    .bill-section{
+        margin-bottom: 2.625rem;
+    }
+
+    .tip-header{
+        margin-bottom: 0.5625rem;
+    }
+
+    .tip-buttons-section{
+        grid-template-columns:repeat(auto-fit,minmax(5.5rem,1fr));
+        row-gap: 1rem;
+        column-gap: 0.875rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .tip-button{
+        min-width: 100% ;
+        max-width: 7.3125rem;
+    }
+    
+    #CustomTip{
+        height: 3rem;
+        min-width: 100% ;
+        max-width: 7.3125rem;
+        padding: 0rem;
+    }
+
+    .numberOfPeople-sction{
+        margin-bottom: 0rem;
+    }
+    /* form section end*/
+
+    /* output section start*/
+    .output-container{
+        height: 100%;
+        max-width: 31rem;
+        padding: 2.5rem;
+    }
+
+    .Amount-section{
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+       
+    }
+
+    .Amount{
+        font-size: 2.875rem;
+        max-width:22.5rem !important;
+        max-height:4.25rem !important;
+        overflow:hidden;
+    }
+
+
+    
+
+    #ResetButton{
+        margin-top: 5.375rem;
+    }
+    /* output section end*/
+
+    footer{
+        background-color:transparent;
+        margin-top: 1rem;
+    }
+    
+}
+/* responsive css end*/
+
+
+/* css style end */
