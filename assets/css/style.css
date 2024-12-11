@@ -179,12 +179,6 @@ button{
     transition: all 0.3s;
 }
 
-button:hover{
-    cursor: pointer;
-    background-color: var(--Light-grayish-cyan) !important;
-    color: var(--Very-dark-cyan);
-}
-
 .active{
     background-color: var(--Strong-cyan) !important;
     color: var(--Very-dark-cyan) !important;
@@ -322,6 +316,12 @@ footer{
         min-width: 100% ;
         max-width: 7.3125rem;
     }
+
+    button:hover{
+        cursor: pointer;
+        background-color: var(--Light-grayish-cyan) !important;
+        color: var(--Very-dark-cyan);
+    }
     
     #CustomTip{
         height: 3rem;
@@ -354,9 +354,6 @@ footer{
         max-height:4.25rem !important;
         overflow:hidden;
     }
-
-
-    
 
     #ResetButton{
         margin-top: 5.375rem;
