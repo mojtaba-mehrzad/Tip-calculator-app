@@ -86,7 +86,6 @@ main{
 
 .form-container{
     width: 100%;
-    padding: 0rem 0.5rem;
 }
 
 /* bill start*/
@@ -103,7 +102,7 @@ main{
     background-position: 1rem;
     background-repeat: no-repeat;
 }
-/* buttons end*/
+/* bill end*/
 
 /* label and inputs start */
 .label-section{
@@ -161,7 +160,7 @@ input::placeholder{
 .tip-buttons-section{
     display: grid;
     gap: 1rem;
-    grid-template-columns:repeat(auto-fit,minmax(9.125rem,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(9.1875rem,1fr));
     align-items: center;
     margin-bottom: 2.25rem;
 }
@@ -169,7 +168,7 @@ input::placeholder{
 .tip-button{
     border: none;
     height: 3rem;
-    min-width: 9.125rem;
+    min-width: 9.1875rem;
     background-color: var(--Very-dark-cyan);
     font-size: 1.5rem;
     color: var(--Very-light-grayish-cyan);
@@ -193,7 +192,7 @@ button:hover{
 
 #CustomTip{
     height: 3rem;
-    min-width: 9.125rem;
+    min-width: 9.1875rem;
     padding-right: 0.5rem !important;
 }
 
